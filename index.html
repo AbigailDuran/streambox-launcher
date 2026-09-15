@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StreamBox</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">STREAMBOX</p>
+        <h1>What do you want to watch?</h1>
+      </div>
+      <div class="status">
+        <div class="datetime">
+          <span id="clock">--:--</span>
+          <span id="date">Loading date...</span>
+        </div>
+
+        <span class="dot"></span>
+        <span>Ready</span>
+      </div>
+    </header>
+
+    <section class="grid" aria-label="Streaming shortcuts">
+      <a class="tile featured" href="https://www.viprow.is/home" data-title="Live Sports">
+        <div class="icon">▶</div>
+        <div>
+          <h2>Live Sports</h2>
+          <p>Your main sports site, PPV included</p>
+        </div>
+      </a>
+
+      <a class="tile" href="https://famelack.com/tv/us" data-title="Live TV">
+        <div class="icon">LIVE</div>
+        <div>
+          <h2>Live TV</h2>
+          <p>Live channels, including Family Fued</p>
+        </div>
+      </a>
+
+      <a class="tile" href="https://myflixerz.day/" data-title="Movies & TV">
+        <div class="icon">M</div>
+        <div>
+          <h2>MyFlixer</h2>
+          <p>Has all shows and movies</p>
+        </div>
+      </a>
+
+      <a class="tile" href="#" onclick="location.reload(); return false;">
+        <div class="icon">↻</div>
+        <div>
+          <h2>Refresh Home</h2>
+          <p>Reload the StreamBox launcher</p>
+        </div>
+      </a>
+    </section>
+
+    <footer>
+      <span>Arrow keys / D-pad to move</span>
+      <span>Enter / X to select</span>
+      <span>Esc / O to go back</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
